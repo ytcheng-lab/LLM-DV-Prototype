@@ -4,7 +4,7 @@
 >
 > **🧠 A summary of how I used ChatGPT to automate test generation during RV32IM+Zfinx integration — turning verification pain points into a reusable LLM workflow.**
 
-![LLM Workflow Overview](assets/case-study-overview.png)
+![LLM Workflow Overview](LLM_workflow_overview.png)
 
 This project started from a real engineering challenge during the integration of the Zfinx extension into an RV32IM processor.
 Which can be refer to: [RV32Zfinx-FPU-Integration-Note](https://github.com/ytcheng-lab/RV32Zfinx-FPU-Integration-Note)
