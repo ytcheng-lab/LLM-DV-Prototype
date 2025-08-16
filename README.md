@@ -31,8 +31,8 @@ In traditional RTL verification, creating meaningful test vectors and golden out
   - (tbd: example prompts, source code)
 
 ## More Documentation
-- [`doc/full-report.md`](doc/full-report.md): Design architecture and how prompts are constructed
-- [`doc/case-study-rv32imzfinx.md`](doc/case-study-rv32imzfinx.md): Origin of LLM use during Zfinx verification
+- [`doc/full-report.md`](docs/full_report.md): Design architecture and how prompts are constructed
+- [`doc/case-study-rv32imzfinx.md`](docs/case_study_rv32imzfinx.md): Origin of LLM use during Zfinx verification
 
 ## Future Work
 - Generalize LLM prompts for more complex instruction sets
