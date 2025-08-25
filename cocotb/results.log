@@ -1,0 +1,44 @@
+rm -f results.xml
+"make" -f Makefile results.xml
+make[1]: Entering directory '/home/yrr/RTL_study/fulladder/cocotb'
+rm -f results.xml
+MODULE=testbench TESTCASE= TOPLEVEL=fulladder TOPLEVEL_LANG=verilog \
+         /usr/bin/vvp -M /home/yrr/.local/lib/python3.10/site-packages/cocotb/libs -m libcocotbvpi_icarus   sim_build/sim.vvp  
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 11.0 (stable)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /home/yrr/.local/lib/python3.10/site-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1754899875
+     0.00ns INFO     cocotb.regression                  Found test testbench.simple_test
+     0.00ns INFO     cocotb.regression                  running simple_test (1/1)
+                                                          Generate truth table by Google gemini-1.5-flash and verify dut with it
+Model: gemini-1.5-flash
+Prompt: Complete the truth table with all possible input_a, input_b, carry_in for a full adder. Output should be csv format with on other information, no header or ending
+Raw response text:0,0,0,0,0
+0,0,1,1,0
+0,1,0,1,0
+0,1,1,0,1
+1,0,0,1,0
+1,0,1,0,1
+1,1,0,0,1
+1,1,1,1,1
+
+CSV successfully saved as output.csv
+ROW: 0, 0, 0, 0, 0
+ROW: 0, 0, 1, 1, 0
+ROW: 0, 1, 0, 1, 0
+ROW: 0, 1, 1, 0, 1
+ROW: 1, 0, 0, 1, 0
+ROW: 1, 0, 1, 0, 1
+ROW: 1, 1, 0, 0, 1
+ROW: 1, 1, 1, 1, 1
+     8.00ns INFO     cocotb.regression                  simple_test passed
+     8.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** testbench.simple_test          PASS           8.00           2.26          3.53  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                  8.00           4.30          1.86  **
+                                                        **************************************************************************************
+                                                        
+make[1]: Leaving directory '/home/yrr/RTL_study/fulladder/cocotb'
